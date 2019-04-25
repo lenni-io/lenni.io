@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lenitio/portfolio/static/css/main.584f321a.chunk.css",
+    "main.js": "/lenitio/portfolio/static/js/main.9ccb00a0.chunk.js",
+    "main.js.map": "/lenitio/portfolio/static/js/main.9ccb00a0.chunk.js.map",
+    "runtime~main.js": "/lenitio/portfolio/static/js/runtime~main.960efeec.js",
+    "runtime~main.js.map": "/lenitio/portfolio/static/js/runtime~main.960efeec.js.map",
+    "static/js/2.b41502e9.chunk.js": "/lenitio/portfolio/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/lenitio/portfolio/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/lenitio/portfolio/index.html",
+    "precache-manifest.01b6fdaf00841d1609ccb43b586514f8.js": "/lenitio/portfolio/precache-manifest.01b6fdaf00841d1609ccb43b586514f8.js",
+    "service-worker.js": "/lenitio/portfolio/service-worker.js",
+    "static/css/main.584f321a.chunk.css.map": "/lenitio/portfolio/static/css/main.584f321a.chunk.css.map",
+    "static/media/logo.svg": "/lenitio/portfolio/static/media/logo.5d5d9eef.svg"
+  }
+}
