@@ -1,3 +1,43 @@
-import React from "react"
+import React from 'react'
+import {Title} from "../components/Title";
+import { ButtonLink } from "../components/Button";
+import { Footer } from '../components/Footer';
+import styled from 'styled-components';
+import Cursor from '../components/Cursor';
 
-export default () => <div>Hello world!</div>
+import '../components/Layout/layout.css';
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  overflow:hidden;
+`
+const SubTitle = styled.h2`
+  font-size: 1.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.25;
+  font-weight: 300;
+  margin-bottom: ${p => (p.spacingBottom) && p.spacingBottom}rem;
+  color: #0F0F16;
+`
+
+export default class Index extends React.Component {
+
+  render() {
+    return (
+      <Container>
+        <Cursor />
+        <Title level={1} spacingBottom={1} >Lennart Hammer</Title>
+        <SubTitle spacingBottom={1}>Web-Entwickler, HTML/CSS/JS ninja</SubTitle>
+
+        <ButtonLink href="mailto:hello@lenni.io">hello@lenni.io</ButtonLink>
+        <Footer />
+      </Container>
+    )
+  }
+}
