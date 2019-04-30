@@ -1,8 +1,10 @@
 import React from 'react'
-import {Title} from "../components/Title";
-import { ButtonLink } from "../components/Button";
-import { Footer } from '../components/Footer';
 import styled from 'styled-components';
+
+import { Title } from "../components/Title";
+import { ButtonLink } from "../components/Button";
+import SEO from '../components/SEO';
+import { Footer } from '../components/Footer';
 import Cursor from '../components/Cursor';
 
 import '../components/Layout/layout.css';
@@ -31,9 +33,10 @@ export default class Index extends React.Component {
   render() {
     return (
       <Container>
+        <SEO title="design & development"/>
         <Cursor />
-        <Title level={1} spacingBottom={1} >Lennart Hammer</Title>
-        <SubTitle spacingBottom={1}>Web-Entwickler, HTML/CSS/JS ninja</SubTitle>
+        <Title level={1} spacingBottom={0.25} >Lennart Hammer</Title>
+        <SubTitle spacingBottom={1}>design & code of digital products </SubTitle>
 
         <ButtonLink href="mailto:hello@lenni.io">hello@lenni.io</ButtonLink>
         <Footer />

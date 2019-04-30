@@ -8,10 +8,10 @@ const Cursor = styled.div`
   position: absolute;
   border-radius: 16px;
   position: absolute;
-^  opacity: 0.8;
+  opacity: 0.8;
   mix-blend-mode: screen;
   pointer-events: none;
-  transition: transform .375s cubic-bezier(0.175, 0.885, 0.32, 1), background-color .375s, top .3s cubic-bezier(0.175, 0.885, 0.32, 1.25), left .25s cubic-bezier(0.175, 0.885, 0.32, 1.0);
+  transition: transform .25s cubic-bezier(0.175, 0.885, 0.32, 1), background-color .25s, top .25s cubic-bezier(0.175, 0.885, 0.32, 1), left .25s cubic-bezier(0.175, 0.885, 0.32, 1.0);
 ` 
 
 export default class CursorContainer extends Component {
@@ -19,7 +19,7 @@ export default class CursorContainer extends Component {
       top: 0,
       left: 0,  
       scale: 1,
-      color: '#f00'
+      color: '#f33'
     }
     myRef = React.createRef();
     
@@ -35,7 +35,7 @@ export default class CursorContainer extends Component {
         setTimeout(() =>
         this.setState({
           scale: 1,
-          color: '#f00'
+          color: '#f33  '
         }), 200)
     })
 
