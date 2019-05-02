@@ -40,21 +40,23 @@ export default class CursorContainer extends Component {
     })
 
     document.addEventListener('mousemove', (e) =>{
-      console.log(e)
-      if(e.target.localName === 'a'){
-        this.setState({
-          scale: 1.6
-        })
-      } else {
-        this.setState({
-          scale: 1
-        })
-      }
-        this.setState({
-          left: e.clientX,
-          top: e.clientY,
-          
-        })
+
+       window.requestAnimationFrame(() => {
+        if(e.target.localName === 'a'){
+          this.setState({
+            scale: 1.6
+          })
+        } else {
+          this.setState({
+            scale: 1
+          })
+        }
+          this.setState({
+            left: e.clientX,
+            top: e.clientY,
+            
+          })
+       });
         
     })
     
