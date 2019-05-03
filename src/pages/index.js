@@ -27,7 +27,7 @@ export default class Index extends React.Component {
         <Title level={1} spacingBottom={0.25} >Lennart Hammer</Title>
         <SubTitle spacingBottom={1}>design & code of digital products </SubTitle>
         <ButtonLink href="mailto:hello@lenni.io">hello@lenni.io</ButtonLink>
-        <img src={ProtfolioImage} style={{position:'absolute', bottom: 0}}  alt="Lennart Hammer"/>
+        <img src={ProtfolioImage} style={{position:'absolute', bottom: 0, zIndex: -1}}  alt="Lennart Hammer"/>
         <Footer />
       </Layout>
     )
