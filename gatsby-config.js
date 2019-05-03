@@ -2,7 +2,7 @@ module.exports = {
    siteMetadata: {
     title: `lenni.io`,
     description: `Web-Development`,
-    author: `@lenitio`,
+    author: `@lenit_io`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,

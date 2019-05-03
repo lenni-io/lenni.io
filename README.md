@@ -1,1 +1,1 @@
-# lenit.io
+# lenni.io

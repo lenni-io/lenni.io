@@ -7,23 +7,23 @@ const background = (props) => {
       return `background-color: transparent;`
       
     default :
-      return `background-color: #6EE8DC;`
+      return `background-color:  ${props.theme.colors.primary};`
   }
 }
 
 const border = (props) => {
   switch(props.ghost) {
     case true :
-      return `border: 2px solid #6EE8DC;`
+      return `border: 2px solid ${props.theme.colors.primary};`
     default :
-      return `border: 2px solid #6EE8DC;`
+      return `border: 2px solid ${props.theme.colors.primary};`
   }
 }
 
 const typeColor = (props) => {
   switch(props.ghost) {
     case true :
-      return `color: #6EE8DC;`
+      return `color: ${props.theme.colors.primary};`
     default :
       return `color: #fff;`
   }
@@ -34,7 +34,7 @@ const boxShadow = (props) => {
     case true :
       return ``
     default :
-      return `box-shadow: 0 20px 40px -20px #6EE8DC;`
+      return `box-shadow: 0px 28px 32px -22px ${props.theme.colors.primary};`
   }
 }
 
@@ -47,6 +47,7 @@ const buttonStyle = ( props ) => css`
   letter-spacing: 3px;
   font-size: 0.875rem;
   margin-top: 1rem;
+  margin-right: 1rem;
   ${typeColor(props)}
   ${border(props)}
   ${background(props)}

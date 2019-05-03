@@ -20,5 +20,5 @@ export const Title = styled(TitleContainer)`
   font-weight: 700;
   margin-top: ${p =>  (p.spacingTop) ? p.spacingTop : '0'}rem;
   margin-bottom: ${p =>  (p.spacingBottom) ? p.spacingBottom : '0'}rem;
-  color: #0F0F16;
+  color: ${(props) => props.theme.colors.body}
 `
