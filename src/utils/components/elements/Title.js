@@ -18,7 +18,7 @@ export const Title = styled(TitleContainer)`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.25;
   font-weight: 700;
-  margin-top: ${p =>  (p.spacingTop) ? p.spacingTop : '0'}rem;
-  margin-bottom: ${p =>  (p.spacingBottom) ? p.spacingBottom : '0'}rem;
+  margin-top: ${p => (p.spacingTop || p.spacingTop === 0  ) ? p.spacingTop : 1}rem;
+  margin-bottom: ${p => (p.spacingBottom || p.spacingBottom === 0) ? p.spacingBottom : 2}rem;
   color: ${(props) => props.theme.colors.body}
 `

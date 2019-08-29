@@ -1,35 +1,37 @@
 import React from 'react'
-import styled from 'styled-components';
 
-import { Title } from "../components/common/Title";
-import { ButtonLink } from "../components/common/Button";
-import SEO from '../components/common/SEO';
-import {Layout} from '../components/common/Layout';
+import { 
+  Title, 
+  SubTitle,
+  ButtonLink, 
+  Layout 
+} from "../utils/components";
 
-import { Footer } from '../components/common/Footer';
-import ProtfolioImage from '../images/portfolio.png';
+import { ParallaxScene, ParallaxItem } from '../components/ParallaxMouse';
+import { Footer } from '../components/Footer'
+import SEO from "../utils/components/SEO";
+import Portfolio from '../images/image_main.png';
 
-const SubTitle = styled.h2`
-  font-size: 1.25rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.25;
-  font-weight: 300;
-  margin-bottom: ${p => (p.spacingBottom) && p.spacingBottom}rem;
-  
-`
 
 export default class Index extends React.Component {
-
+  
   render() {
     return (
+      
       <Layout>
         <SEO title="design & development"/>
-        <Title level={1} spacingBottom={0.25} >Lennart Hammer</Title>
-        <SubTitle spacingBottom={1}>design & code of digital products </SubTitle>
-        <ButtonLink href="mailto:hello@lenni.io">hello@lenni.io</ButtonLink>
-        <img src={ProtfolioImage} style={{position:'absolute', bottom: 0}}  alt="Lennart Hammer"/>
+        <ParallaxScene>
+          <ParallaxItem speed={220} bottom={-100} ><img src={Portfolio} alt="ImageMe" /></ParallaxItem>
+          <ParallaxItem speed={80}>
+            <Title level={1} spacingBottom={1}  spacingTop={0} >Lennart Hammer</Title>
+            <SubTitle spacingTop={0} spacingBottom={1}>Design & Code of Digital Products</SubTitle>
+            <ButtonLink href="mailto:hello@lenni.io">hello@lenni.io</ButtonLink>
+          </ParallaxItem>
+        </ParallaxScene>
         <Footer />
       </Layout>
     )
   }
 }
+
+
