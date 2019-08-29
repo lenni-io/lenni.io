@@ -1,7 +1,7 @@
 module.exports = {
    siteMetadata: {
     title: `lenni.io`,
-    description: `Web-Development`,
+    description: `Web Development`,
     author: `@lenit_io`,
   },
   plugins: [
